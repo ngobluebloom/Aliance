@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliance - Accueil</title>
+    <link rel="stylesheet" href="updated_styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="banniere.png" alt="Logo Aliance" class="logo">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> 
+            
+          <div class="extras">
+                <!-- Bouton pour passer en anglais -->
+                <button class="lang-toggle" onclick="window.location.href='apropos_en.html'">EN</button>
+        </nav>
+    </header>
+<br><br><br><br>
+    <!-- QUI SOMMES-NOUS -->
+    <section class="about-section visible">
+        <h1>Qui sommes-nous ?</h1>
+        <p>
+            Aliance est une agence qui coordonne et supervise divers projets stratégiques : Des organisations non gouvernementales, des blogs, des organisations à but lucratif et bien plus encore.
+            Nous avons commencé en 2023, avec une vision claire : apporter un impact durable et positif dans chaque initiative.
+            Officiellement, nous opérons à partir du 30 décembre 2024, avec l'ambition de construire des solutions innovantes
+            qui changent les communautés locales et globales.
+        </p>
+    </section>
+
+    <!-- NOS VALEURS -->
+    <section class="values-section">
+        <h1>Nos valeurs</h1>
+        <div class="values-grid">
+            <div class="value-item">
+                <h3>Innovation</h3>
+                <p>
+                    Chez Aliance, nous repoussons sans cesse les limites de la créativité et de l'ingéniosité pour fournir des
+                    solutions adaptées aux besoins actuels et futurs.
+                </p>
+            </div>
+            <div class="value-item">
+                <h3>Impact</h3>
+                <p>
+                    Chaque projet que nous supervisons est conçu pour apporter un changement positif et durable dans les communautés
+                    que nous servons.
+                </p>
+            </div>
+            <div class="value-item">
+                <h3>Collaboration</h3>
+                <p>
+                    Nous croyons au pouvoir de la coopération et du partenariat pour atteindre des objectifs partagés et maximiser
+                    l'efficacité.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALIANCE EN CHIFFRES -->
+    <section class="stats-section">
+        <h1>Aliance en chiffres</h1>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h2 data-target="3">0</h2>
+                <p>Projets supervisés</p>
+            </div>
+            <div class="stat-item">
+                <h2 data-target="5">0</h2>
+                <p>Villes couvertes</p>
+            </div>
+            <div class="stat-item">
+                <h2 data-target="2">0</h2>
+                <p>Partenaires</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="temoignages.html">Témoins</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/aliance.agency/" target="_blank" rel="noopener noreferrer">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@aliance.agency" target="_blank" rel="noopener noreferrer">
+                        <img src="tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Falianceagency" target="_blank" rel="noopener noreferrer">
+                        <img src="twitter.png" alt="X (Twitter)">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aliance. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".stat-item h2");
+            const duration = 3000;
+
+            const animateCounter = (counter) => {
+                const target = +counter.getAttribute("data-target");
+                let current = 0;
+                const increment = target / (duration / 50);
+
+                const updateCounter = () => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.innerText = target + "+";
+                    } else {
+                        counter.innerText = Math.floor(current);
+                        setTimeout(updateCounter, 50);
+                    }
+                };
+
+                updateCounter();
+            };
+
+            counters.forEach(animateCounter);
+        });
+        // Sélectionner les éléments
+const searchIcon = document.getElementById('search-icon');
+const searchForm = document.getElementById('search-form');
+
+// Affiche ou cache le formulaire quand on clique sur la loupe
+searchIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchForm.classList.toggle('active'); // Afficher ou cacher le formulaire
+});
+
+// Ferme le formulaire si on clique à l'extérieur
+document.addEventListener('click', (e) => {
+    if (!searchForm.contains(e.target) && e.target !== searchIcon) {
+        searchForm.classList.remove('active');
+    }
+});
+
+    </script>
+      <script src="translate.js"></script>
+</body>
+</html>

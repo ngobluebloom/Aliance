@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliance - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="banniere.png" alt="Logo Aliance" class="logo">
+        </div>
+        <nav class="navigation">
+            <ul>
+				<li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         
+                 <div class="extras">
+                <!-- Bouton pour passer en anglais -->
+                <button class="lang-toggle" onclick="window.location.href='index_en.html'">EN</button>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="carousel-slide" onclick="redirectToNews()">
+                <img src="lancementbb.jpg" alt="Blue Bloom" class="carousel-image">
+                <div class="carousel-caption">
+                    <h2>Lancement de l'ONG Blue Bloom</h2>
+                      </h3>le 31/12 à 23h59</h3>
+                </div>
+            </div>
+            <div class="carousel-slide" onclick="redirectToNews()">
+                <img src="project2.jpg" alt="Projet 2" class="carousel-image">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="carousel-slide" onclick="redirectToNews()">
+                <img src="campaign.jpg" alt="Campagne de Sensibilisation" class="carousel-image">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="carousel_script.js"></script>
+</body>
+</html>

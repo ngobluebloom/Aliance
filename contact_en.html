@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliance - Coming Soon</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="banniereen.png" alt="Aliance Logo" class="logo">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index_en.html">Home</a></li>
+                <li><a href="apropos_en.html">About Us</a></li>
+                <li><a href="projets_en.html">Projects</a></li>
+                <li><a href="realisations_en.html">Achievements</a></li>
+                <li><a href="temoignages_en.html">Testimonials</a></li>
+                <li><a href="equipe_en.html">Team</a></li>
+                <li><a href="contact_en.html">Contact</a></li>
+            </ul>
+            <div class="extras">
+                <form id="search-form" class="hidden" action="search.html" method="get">
+                    <input type="text" name="query" placeholder="Search..." id="search-input" required>
+                    <button type="submit">Go</button>
+                </form>
+                <button class="lang-toggle" onclick="window.location.href='contact.html'">FR</button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- CONTACT SECTION -->
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or requests, fill out the form below or contact us directly through our contact information.</p>
+            
+            <div class="contact-container">
+                <!-- Form -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send</button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Our Contact Info</h3>
+                    <p>Email: <a href="mailto:contact.aliance@gmail.com">contact.aliance@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+212773667230">+212 773 667 230</a></p>
+                    <p>Address: Rabat, Avenue Mohammed 6, km 8.5</p>
+                </div>
+            </div>
+            <br><br>
+
+            <!-- Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.333031938601!2d-6.852790585180023!3d33.97266768063432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76c3e1e6f1ab9%3A0x8b40d739f1d9919b!2sRabat%2C%20Avenue%20Mohammed%206%2C%20km%208%2C5!5e0!3m2!1sfr!2sma!4v1690835154218!5m2!1sfr!2sma" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="index_en.html">Home</a></li>
+                    <li><a href="apropos_en.html">About Us</a></li>
+                    <li><a href="projets_en.html">Projects</a></li>
+                    <li><a href="realisations_en.html">Achievements</a></li>
+                    <li><a href="temoignages_en.html">Testimonials</a></li>
+                    <li><a href="equipe_en.html">Team</a></li>
+                    <li><a href="contact_en.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/aliance.agency/" target="_blank" rel="noopener noreferrer">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@aliance.agency" target="_blank" rel="noopener noreferrer">
+                        <img src="tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Falianceagency" target="_blank" rel="noopener noreferrer">
+                        <img src="twitter.png" alt="X (Twitter)">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aliance. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
